@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: springboot-service
+    name: springboot-demo
     env: docker
-    rootDir: demo
-    dockerfilePath: Dockerfile
     plan: free
     region: oregon
-    branch: main
+    branch: master
+    dockerfilePath: Dockerfile
+    rootDir: .              # ✅ Required since 'demo/' is at repo root
     healthCheckPath: /
