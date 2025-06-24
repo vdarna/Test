@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: springboot-service
+    env: docker
+    rootDir: demo
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    branch: main
+    healthCheckPath: /
